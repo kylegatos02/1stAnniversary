@@ -106,18 +106,19 @@ html, body {
 /* TEXT */
 .scene p {
   position: absolute;
-  bottom: 120px;
-  left: 30%;
+  bottom: 40px;              /* distance from bottom */
+  left: 50%;
   transform: translateX(-50%);
+
+  z-index: 2;
+  font-size: 1.3rem;
+  max-width: 85%;
+  text-align: center;
 
   padding: 10px 20px;
   background: rgba(0,0,0,0.4);
   border-radius: 12px;
   backdrop-filter: blur(8px);
-
-  font-size: 1.2rem;
-  max-width: 85%;
-  text-align: center;
 
   opacity: 0;
   animation: fadeText 1s forwards;
