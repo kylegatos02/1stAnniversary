@@ -616,10 +616,11 @@ html, body {
 
 @media (max-width: 768px) {
   .scene p {
-    position: static;          /* removes absolute positioning */
-    transform: none;           /* reset transform */
-    margin: 20px auto 0;       /* center + space from image */
-    
+    position: static;
+    left: auto;            /* 🔥 THIS fixes the right shift */
+    transform: none;
+
+    margin: 20px auto 0;
     display: block;
     text-align: center;
 
