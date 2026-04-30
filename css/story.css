@@ -305,3 +305,16 @@ html, body {
     transform: scale(1);
   }
 }
+
+/* MOBILE LANDSCAPE TEXT FIX */
+@media (max-width: 768px) and (orientation: landscape) {
+  .scene p {
+    position: static;        /* remove absolute positioning */
+    transform: none;         /* reset transform */
+    margin: 10px auto;       /* center and push below */
+    display: block;
+
+    font-size: 1rem;
+    max-width: 95%;
+  }
+}
