@@ -614,4 +614,16 @@ html, body {
   }
 }
 
+@media (max-width: 768px) {
+  .scene p {
+    position: static;          /* removes absolute positioning */
+    transform: none;           /* reset transform */
+    margin: 20px auto 0;       /* center + space from image */
+    
+    display: block;
+    text-align: center;
 
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}
