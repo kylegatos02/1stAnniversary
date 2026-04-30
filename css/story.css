@@ -614,16 +614,4 @@ html, body {
   }
 }
 
-/* MOBILE LANDSCAPE TEXT FIX */
-@media (max-width: 768px) and (orientation: landscape) {
-  .scene p {
-    position: static;        /* remove absolute positioning */
-    transform: none;         /* reset transform */
-    margin: 30px auto;       /* center and push below */
-    display: block;
-
-    font-size: 1rem;
-    max-width: 95%;
-  }
-}
 
